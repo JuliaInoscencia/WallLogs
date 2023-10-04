@@ -1,0 +1,11 @@
+<% @post.errors.full_messages.each do |message| %>
+    <%= message%>
+<% end %>
+<%= form_for @post do |f| %>
+    Título
+    <%= f.text_field :titulo%><br/>
+    Conteúdo
+    <%= f.text_area :conteudo%><br/>
+    <%= f.submit text_action, class: "btn btn-primary"%>
+
+<% end%>

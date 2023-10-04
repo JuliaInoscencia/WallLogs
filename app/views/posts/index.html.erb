@@ -1,0 +1,11 @@
+<%= flash[:notice] %>
+
+<h1>Blog</h1>
+<%= render partial: "post", locals: { posts: @posts } %>
+
+<% if current_user.present? %>
+    <%= link_to "Criar novo post", new_post_path %>
+<% end %>
+
+
+

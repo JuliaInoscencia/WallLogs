@@ -1,0 +1,212 @@
+.title {
+    color: #da5162;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1.5em;
+}
+
+.container-form {
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+min-height: 100vh !important; 
+}
+
+.card-form  {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 350px;
+width: 500px;
+flex-direction: column;
+gap: 35px;
+border-radius: 15px;
+background: #e3e3e3;
+box-shadow: 16px 16px 32px #c8c8c8,
+        -16px -16px 32px #fefefe;
+border-radius: 8px;
+}
+
+.input-email,
+.input-password {
+position: relative;
+width: 422px;
+height: 52px;
+}
+
+.input-email input,
+.input-password input {
+width: 100%;
+height: 45px;
+padding: 0;
+padding-left: 10px;
+margin: 0;
+outline: none;
+border: none;
+color: #da5162;
+font-size: 1em;
+background: transparent;
+border-left: 2px solid #da5162;
+border-bottom: 2px solid #da5162;
+transition: 0.1s;
+border-bottom-left-radius: 8px;
+}
+
+.input-email span,
+.input-password span {
+margin-top: 5px;
+position: absolute;
+left: 0;
+transform: translateY(-4px);
+margin-left: 10px;
+padding: 10px;
+pointer-events: none;
+font-size: 12px;
+color: #da5162;
+text-transform: uppercase;
+transition: 0.5s;
+letter-spacing: 3px;
+border-radius: 8px;
+}
+
+.input-email input:valid + span,
+.input-email input:focus + span {
+transform: translateX(320px) translateY(-15px);
+font-size: 0.8em;
+padding: 5px 10px;
+background: #da5162;
+letter-spacing: 0.2em;
+color: #fff;
+border: 2px solid #da5162;
+}
+
+.input-password input:valid + span,
+.input-password input:focus + span {
+transform: translateX(320px) translateY(-15px);
+font-size: 0.8em;
+padding: 5px 10px;
+background: #da5162;
+letter-spacing: 0.2em;
+color: #fff;
+border: 2px solid #da5162;
+}
+
+.input-email input:valid,
+.input-email input:focus,
+.input-password input:valid,
+.input-password input:focus {
+border: 2px solid #da5162;
+border-radius: 8px;
+}
+
+.link {
+color: #000; 
+text-decoration: none; 
+transition: color 0.5s; 
+}
+
+.link:hover {
+color: #a10f18; 
+}
+
+.enter {
+height: 45px;
+width: 100px;
+border-radius: 5px;
+border: 2px solid #da5162;
+cursor: pointer;
+background-color: transparent;
+transition: 0.5s;
+text-transform: uppercase;
+font-size: 10px;
+letter-spacing: 2px;
+margin-bottom: 3em;
+}
+
+.enter:hover {
+background-color: #da5162;
+color: white;
+}
+.password-field {
+    position: relative;
+  }
+  
+  .password-field .toggle-password-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .password-field .toggle-password-button:focus {
+    outline: none;
+  }
+  
+  .gg-eye,
+  .gg-eye-alt {
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 24px;
+    height: 18px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-left: 10px;
+    top: 1px; 
+    color: #da5162; 
+  }
+  
+  .gg-eye::after,
+  .gg-eye::before,
+  .gg-eye-alt::after,
+  .gg-eye-alt::before {
+    content: "";
+    display: block;
+    border-radius: 100px;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .gg-eye::after {
+    top: 2px;
+    box-shadow: inset 0 -8px 0 2px, inset 0 0 0 2px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .gg-eye::before {
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    bottom: 4px;
+    left: 8px;
+  }
+  
+  .gg-eye-alt::after {
+    top: 2px;
+    box-shadow:
+      inset 0 -8px 0 2px,
+      inset 0 0 0 2px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .gg-eye-alt::before {
+    width: 8px;
+    height: 8px;
+    border: 2px solid transparent;
+    box-shadow:
+      inset 0 0 0 6px,
+      0 0 0 4px,
+      6px 0 0 0,
+      -6px 0 0 0 ;
+    bottom: 4px;
+    left: 8px;
+  }
+  

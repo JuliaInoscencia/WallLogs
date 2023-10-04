@@ -1,0 +1,130 @@
+.btn-form {
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .container-page {
+    position: relative;
+    background: linear-gradient(to bottom, #fdf7f8, #f2d7d7);
+    min-width: 100%;
+    min-height: 910px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-form-modal {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px; 
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 15px 30px 0 #da5162;
+    border-radius: 10px;
+    min-height: 700px;
+  }
+  .form-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form-body {
+    padding: 1rem 2rem;
+  }
+  
+  .form-footer {
+    padding: 0 2rem 1.5rem;
+  }
+  
+  .form-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: 'Acme', sans-serif;
+  }
+  
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease;
+  }
+  
+  .button--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border-radius: 0.25rem;
+  }
+  
+  .button--icon:focus, .button--icon:hover {
+    background-color: #ededed;
+  }
+  
+  .button--primary {
+    background-color: #da5162;
+    color: #FFF;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .button--primary:hover {
+    background-color: rgba(218, 81, 98, 0.8);
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input + .input {
+    margin-top: 1.75rem;
+  }
+  
+  .input-form {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Patrick Hand', cursive;
+  }
+  
+  .input-field {
+    display: block;
+    margin-top: 0.5rem;
+    border: 1px solid #DDD;
+    border-radius: 0.25rem;
+    padding: 0.75rem 0.75rem;
+    transition: 0.15s ease;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #da5162;
+    box-shadow: 0 0 0 1px #da5162, 0 0 0 4px rgba(218, 81, 98, 0.25)
+    ;
+  }
+  
+  .input-textarea {
+    min-height: 275px;
+    max-width: 100%;
+    resize: vertical;
+  }
+
+  .input-description{
+    font-family: 'Patrick Hand', cursive;
+    margin-bottom: 0;
+  }
+  .button-icon:focus,
+.button-icon:hover {
+  background-color: transparent; 
+  box-shadow: rgba(218, 81, 98, 0.25);
+}
+
+
+  

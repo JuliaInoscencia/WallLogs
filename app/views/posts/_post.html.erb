@@ -1,0 +1,14 @@
+<div class="card-deck">
+  <% posts.each do |post| %>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><%= post.titulo %></h3>
+        <p class="card-text"><%= post.conteudo %></p>
+        <% if current_user.present? && post.user == current_user %>
+          <%= button_to "Remover", post, method: :delete, class: "btn btn-danger", data: { confirm: "Tem certeza que deseja remover #{post.titulo}?" } %>
+          <%= link_to "Alterar", edit_post_path(post), class: "btn btn-default" %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
